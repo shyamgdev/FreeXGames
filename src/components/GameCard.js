@@ -5,7 +5,7 @@ import useGameDetailsContext from '../context/GameDetailsContext';
 
 export default function GameCard(props) {
   const { setDetails } = useGameDetailsContext();
-  const url = props.url.replace('https://html5.gamemonetize.com/', '');
+  // const url = props.url.replace('https://html5.gamemonetize.com/', '');
 
   const handleOnClick = () => {
     setDetails(props);
@@ -22,9 +22,9 @@ export default function GameCard(props) {
           <h4 className="gameCard-category line-clamp" title={props.category}>{props.category}</h4>
         </Link>
         <div className="gameCard-details-right">
-          <Link to={`/game/${url}`} className="gameCard">
+          <a href={props.url} target="_blank" rel="noreferrer" className="gameCard">
             <button className="gameCard-btn" title="Play" aria-label="Play"><PlayCircleIcon /></button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

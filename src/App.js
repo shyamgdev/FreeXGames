@@ -7,7 +7,6 @@ import GameDetails from './modals/GameDetails';
 import Search from './pages/Search';
 import LoadingModal from './modals/LoadingModal';
 import Home from './pages/Home';
-import Play from './pages/Play';
 
 function App() {
   const { search } = useParams();
@@ -38,9 +37,6 @@ function App() {
             </main>
           } />
         </Route>
-        <Route exact path="game/:id" element={
-          <Play />
-        } />
       </Routes>
     </>
   );
