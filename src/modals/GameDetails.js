@@ -1,11 +1,9 @@
 import './css/GameDetails.css';
-import { Link } from 'react-router-dom';
 import useGameDetailsContext from '../context/GameDetailsContext';
 import Modal from './Modal';
 
 export default function GameDetails() {
   const { details } = useGameDetailsContext();
-  const url = details.length !== 0 && details.url.replace('https://html5.gamemonetize.com/', '');
 
   return (
     details.length !== 0 &&
@@ -32,9 +30,9 @@ export default function GameDetails() {
               {details.tags}
             </p>
           </div>
-          <Link to={`/game/${url}`} id="gameDetails-play-btn-link">
+          <a href={details.url} target="_blank" rel="noreferrer" id="gameDetails-play-btn-link">
             <button id="gameDetails-play-btn" title="Play">Play</button>
-          </Link>
+          </a>
         </div>
       </Modal>
     </>
