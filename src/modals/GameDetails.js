@@ -1,9 +1,11 @@
 import './css/GameDetails.css';
 import useGameDetailsContext from '../context/GameDetailsContext';
 import Modal from './Modal';
+import { Link } from 'react-router-dom';
 
 export default function GameDetails() {
   const { details } = useGameDetailsContext();
+  const tags = details.tags && details.tags.split(", ");
 
   return (
     details.length !== 0 &&
@@ -27,7 +29,15 @@ export default function GameDetails() {
             <br />
             <p id="gameDetails-tags">
               <span>Tags</span><br /><br />
-              {details.tags}
+              {
+                tags.map((e, i) => {
+                  return (
+                    <Link to={`/search=${tags[i]}`} key={tags[i]}>
+                      <u>{tags[i]}</u>
+                    </Link>
+                  )
+                })
+              }
             </p>
           </div>
           <a href={details.url} target="_blank" rel="noreferrer" id="gameDetails-play-btn-link">

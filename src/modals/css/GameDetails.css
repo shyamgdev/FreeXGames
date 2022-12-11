@@ -34,7 +34,7 @@
 
 #gameDetails-details {
   padding-bottom: 100px;
-  margin-left: 2rem;
+  margin: 0 1rem;
 }
 
 #gameDetails-title {
@@ -51,6 +51,19 @@
 #gameDetails p span {
   font-size: 1rem;
   color: var(--color);
+}
+
+#gameDetails-tags {
+  overflow-wrap: break-word;
+}
+
+#gameDetails-tags a:not(:first-child) {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px; */
+  margin-right: 10px;
+  white-space: nowrap;
 }
 
 #gameDetails-play-btn-link {

@@ -33,8 +33,8 @@ export default function Header() {
         <div id="header-right">
           {
             mediaQuery ?
-              <SearchForm collapse={!mediaQuery} />
-              : <SearchIcon onClick={()=>{navigate('/search=search...')}} />
+              <SearchForm />
+              : <SearchIcon style={{cursor: "pointer"}} onClick={()=>{navigate('/search=search...')}} />
           }
         </div>
       </nav>
