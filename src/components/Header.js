@@ -3,12 +3,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SearchIcon from '@mui/icons-material/Search';
 import SearchForm from './SearchForm';
-import { useState } from 'react';
 
 export default function Header() {
   const navigate = useNavigate();
   const mediaQuery = useMediaQuery('(min-width:500px)');
-  // const [collapse, setCollapse] = useState();
 
   return (
     <header id="header">
