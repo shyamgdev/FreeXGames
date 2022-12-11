@@ -1,0 +1,74 @@
+#gameDetails {
+  width: 100%;
+  height: 100%;
+}
+
+#gameDetails-close-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: #d7666d;
+  background-color: transparent;
+}
+
+#gameDetails-thumbnail {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border: 1px solid #d7666d;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #fff;
+}
+
+#gameDetails-thumbnail img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#gameDetails-details {
+  padding-bottom: 100px;
+  margin-left: 2rem;
+}
+
+#gameDetails-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#gameDetails p {
+  font-size: 13px;
+  color: var(--secondary-color);
+  line-height: 1.17rem;
+}
+
+#gameDetails p span {
+  font-size: 1rem;
+  color: var(--color);
+}
+
+#gameDetails-play-btn-link {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: var(--modal-wrapper-width);
+  padding-bottom: 10px;
+}
+#gameDetails-play-btn {
+  display: flex;
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  color: #fff;
+  background-color: #d7666d;
+}

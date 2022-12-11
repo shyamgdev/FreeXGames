@@ -1,0 +1,39 @@
+html {
+  --color: #12c2e9;
+  --secondary-color: rgba(18, 194, 233, .7);
+  --hover-color: rgba(18, 194, 233);
+  --bg-color: #1a004d;
+
+  --header-height: 60px;
+  --header-bg-color: rgba(16, 10, 49, 0.6);
+  --header-z-index: 999;
+
+  --container-items: 5;
+  --container-gap: 10px;
+
+  --gameCard-bg-color: rgba(255,255,255,.2);
+
+  --modal-bg-color: rgba(16, 10, 49, 1);
+  --modal-z-index: calc(var(--header-z-index) + 1);
+  --modal-wrapper-width: 409px;
+  --modal-wrapper-z-index: calc(var(--modal-z-index) + 1);
+  --loadingModal-z-index: calc(var(--modal-z-index) + 1);
+}
+
+@media screen and (max-width: 1140px) {
+  html {
+    --container-items: 3;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  html {
+    --container-items: 2;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    --container-items: 1;
+  }
+}
